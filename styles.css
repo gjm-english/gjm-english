@@ -1,5 +1,8 @@
 html {
   min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 /* overall styles */
@@ -30,6 +33,11 @@ body {
   align-items: center;
   
   transition: background-image 0.65s ease-in-out;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .site-wrapper {
@@ -87,6 +95,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 50%;
+  justify-content: flex-start;
 }
 
 /* align-self: flex-start */
@@ -123,7 +132,7 @@ body {
   text-shadow: 1px 1px #000;
   width: 100%;
   font-size: 1em;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   margin-top: 1em;
 }
 
@@ -240,12 +249,14 @@ footer {
   html                    { font-size: 9px; }
   .site-wrapper           { width: 320px; }
   .site-inner             { width: 320px; }
+  #loc-tag                { display: none; }
 }
 
 @media screen and (min-width: 400px) and (max-width: 599px)  {
   html                    { font-size: 10px; }
   .site-wrapper           { width: 400px; }
   .site-inner             { width: 400px; }
+  #loc-tag                { display: none; }
 }
 
 @media screen and (min-width: 600px) and (max-width: 799px) {
