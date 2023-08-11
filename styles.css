@@ -33,6 +33,7 @@ body {
   align-items: center;
   
   transition: background-image 0.65s ease-in-out;
+  -moz-transition: background-image 0.65s ease-in-out;
 
   user-select: none;
   -moz-user-select: none;
