@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alegreya:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form-styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GM</title>
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+
+      <div id="top-bar" class="top-bar">
+        <div id="title-section" class="align-left title-section">
+          GARETH MINHALL | Hamburg
+        </div>
+        <div id="nav-section" class="nav-section">
+          <div class="header-option is-link" onClick="changeTo('home')">home</div>
+          <div class="header-option is-link" onClick="changeTo('about')">about</div>
+          <div class="header-option is-link" onClick="changeTo('contact')">contact</div>
+          <div class="header-option is-link" onClick="changeTo('testimonials')">testimonials</div>
+          <div class="header-option is-link" onClick="changeTo('social')">social</div>
+        </div>
+      </div>
+
+      <div id="site-inner" class="site-inner align-center">
+
+        <div class="content" id="home-section">
+            <div class="box-caption">
+              Master the English language with personalised, expert tuition.
+            </div>
+            <div class="box-undertitle is-link" onClick="changeTo('about')">
+              LEARN MORE
+            </div>
+        </div>
+
+        <div class="content no-show" id="about-section">
+          <div class="box-caption" style="font-size: 1.5em; margin-bottom: 1em;">
+            I'm Gareth, a native English speaker and German national with over 20 years of experience in teaching English. I'm passionate about helping people learn English, and I believe that everyone can achieve their language learning goals with the right support.
+          </div>
+          <div class="box-caption" style="font-size: 1.5em; margin-bottom: 1em;">
+            I offer a variety of English tuition services, including one-to-one tutoring, group classes, and online lessons.
+          </div>
+          <div class="box-caption" style="font-size: 1.5em; margin-bottom: 1em;">
+            No matter what your learning objectives are, I can help you attain them. I'm a patient and experienced tutor who will work with you to develop a customized learning plan that meets your individual or organizational needs.
+          </div>
+          <div class="box-caption" style="font-size: 1.5em;">
+            Get in touch today to learn more about how I can help you, or your company, achieve your English-speaking goals.
+          </div>
+          <div class="box-undertitle is-link" onClick="changeTo('contact')">
+            CONTACT FORM
+          </div>
+        </div>
+
+        <div class="content no-show" id="contact-section">
+          <main>
+            <form>
+              <div>
+                <label for="name" class="large-label">Name</label>
+                <input id="name" type="text" placeholder="First or Full Name" />
+              </div>
+              <div>
+                <label for="email" class="large-label">Email</label>
+                <input id="email" type="email" placeholder="name@example.com" />
+              </div>
+              <div>
+                <label for="tuitionType" class="large-label">Enquiry Type</label>
+                <select id="tuitionType">
+                  <option value="business">Business</option>
+                  <option value="individual">Individual</option>
+                </select>
+              </div>
+              <div>
+                <label for="cname" class="large-label">Company</label>
+                <input id="cname" type="text" placeholder="Your Company Name"/>
+              </div>
+              <div class="full-width">
+                <label for="message" class="large-label">Message</label>
+                <textarea id="message" placeholder="Add any additional detail."></textarea>
+              </div>
+              <div class="full-width">
+                <input type="checkbox" id="newsletter" />
+                <label for="newsletter" class="small-label">Receive the newsletter?</label>
+              </div>
+              <div class="full-width">
+                <button type="submit">Submit Enquiry</button>
+                <button type="reset">Reset Form</button>
+              </div>
+            </form>
+          </main>
+        </div>
+
+        <div class="content no-show" id="testimonials-section">
+          <div class="box-caption testimonial">
+            We hired an English tutor for our sales team because we wanted them to be able to close more deals with international clients. Gareth was invaluable in giving our team the confidence they needed to speak English fluently with business partners.
+          </div>
+          <div class="box-caption testimonial-name">
+            — Julia Fischer, CFO, Kloeckner & Co
+          </div>
+          <div class="box-caption testimonial">
+            My tutor helped me to prepare for the TOEFL exam. I was able to improve my score by 100 points, which helped me get into my first-choice graduate school.
+          </div>
+          <div class="box-caption testimonial-name">
+            — Peter Müller
+          </div>
+          <div class="box-caption testimonial">
+            I work in a customer-facing professional role, and I was struggling to communicate effectively with my clients. Gareth helped me to improve my English and to become more confident in my speaking abilities.
+          </div>
+          <div class="box-caption testimonial-name">
+            — Anna Meier
+          </div>
+        </div>
+
+        <div class="content no-show" id="social-section">
+          <div class="social-box">
+            <div class="social-icon">
+                <img src="./assets/icons8-linkedin.svg" class="filter-invert" alt="LinkedIn icon"/>
+            </div>
+            <div class="social-text">
+              @garethminhall
+            </div>
+          </div>
+          
+          <div class="social-box">
+            <div class="social-icon">
+                <img src="./assets/icons8-twitter.svg" class="filter-invert" alt="Twitter icon"/>
+            </div>
+            <div class="social-text">
+              @gminhall
+            </div>
+          </div>
+          
+          <div class="social-box">
+            <div class="social-icon">
+                <img src="./assets/email-14-svgrepo-com.svg" style="width: 48px; height: 48px;" class="filter-invert" alt="Email icon"/>
+            </div>
+            <div class="social-text">
+              enquiries@gminhall.com
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <footer>
+        copyright ©2023 gareth minhall. all rights reserved.
+      </footer>
+
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
