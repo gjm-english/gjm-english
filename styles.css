@@ -87,17 +87,17 @@ body {
 .nav-section {
   display: flex;
   flex-direction: row;
-  width: 50%;
   flex-direction: row;
   justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .title-section {
   font-weight: 600;
   display: flex;
   flex-direction: row;
-  width: 50%;
   justify-content: flex-start;
+  flex-shrink: 1;
 }
 
 /* align-self: flex-start */
@@ -233,17 +233,21 @@ input:disabled {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: auto;
   
-  color:#3d3d3d;
+  color:#5d5d5d;
   
-  width: 25%;
+  width: 40%;
   min-width: 350px;
-  align-items: center;
-  
+  justify-content: center; /* Horizontally center items */
+  text-align: center; /* Ensure text itself is centered */
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 0.65em;
+}
+
+#emailDiv {
+  cursor: pointer;
 }
 
 
