@@ -12,18 +12,6 @@ setTimeout(function() {
 const myDropdown = document.getElementById("tuitionType");
 const myInput = document.getElementById("cname");
 
-myDropdown.addEventListener("change", function() {
-  console.log(myDropdown.value)
-  if (myDropdown.value === "individual") {
-    myInput.disabled = true;
-    myInput.setAttribute("placeholder", "");
-    myInput.value = "";
-  } else {
-    myInput.disabled = false;
-    myInput.setAttribute("placeholder", "Your Company Name");
-  }
-});
-
 function changeTo(clicked) {
   if (clicked === activeSection) return;
   if (isTransitioning) return;
@@ -59,6 +47,19 @@ function changeTo(clicked) {
     activeSection = clicked;
   }, transitionDuration);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  var emailDiv = document.getElementById("emailDiv");
+  emailDiv.addEventListener("click", function() {
+      var emailAddress = "gminhall@hotmail.com";
+      var subject = "Anfrage bezüglich englischer Sprachunterrichtsstunden";
+      var body = "";
+      var mailtoLink = "mailto:" + emailAddress +
+                       "?subject=" + encodeURIComponent(subject) +
+                       "&body=" + encodeURIComponent(body);
+      window.location.href = mailtoLink;
+  });
+});
 
 function toMS(s) {
   return parseFloat(s) * (/\ds$/.test(s) ? 1000 : 1);
