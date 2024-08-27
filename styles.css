@@ -203,7 +203,18 @@ input:disabled {
   font-size: 1.5em;
 }
 
+.testimonial-name-only {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  margin-bottom: 2em;
+  font-size: 1em;
+}
+
 .testimonial-name {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 1em;
+}
+
+.testimonial-job {
   font-family: 'Alegreya Sans SC', sans-serif;
   margin-bottom: 2em;
   font-size: 1em;
