@@ -200,24 +200,24 @@ input:disabled {
 }
 
 .testimonial {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .testimonial-name-only {
   font-family: 'Alegreya Sans SC', sans-serif;
-  margin-bottom: 2em;
-  font-size: 1em;
+  margin-bottom: 1.5em;
+  font-size: .85em;
 }
 
 .testimonial-name {
   font-family: 'Alegreya Sans SC', sans-serif;
-  font-size: 1em;
+  font-size: .85em;
 }
 
 .testimonial-job {
   font-family: 'Alegreya Sans SC', sans-serif;
-  margin-bottom: 2em;
-  font-size: 1em;
+  margin-bottom: 1.5em;
+  font-size: .85em;
 }
 
 .social-box {
